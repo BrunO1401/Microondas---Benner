@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Microondas));
             this.btnZero = new System.Windows.Forms.Button();
             this.btnNove = new System.Windows.Forms.Button();
             this.btnOito = new System.Windows.Forms.Button();
@@ -216,18 +217,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label5.Location = new System.Drawing.Point(900, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 13);
+            this.label5.Size = new System.Drawing.Size(160, 15);
             this.label5.TabIndex = 34;
             this.label5.Text = "Programas de Aquecimento";
             // 
             // lblPotencia
             // 
             this.lblPotencia.AutoSize = true;
+            this.lblPotencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblPotencia.Location = new System.Drawing.Point(778, 98);
             this.lblPotencia.Name = "lblPotencia";
-            this.lblPotencia.Size = new System.Drawing.Size(19, 13);
+            this.lblPotencia.Size = new System.Drawing.Size(21, 15);
             this.lblPotencia.TabIndex = 33;
             this.lblPotencia.Text = "10";
             this.lblPotencia.Click += new System.EventHandler(this.lblPotencia_Click);
@@ -235,27 +238,29 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label3.Location = new System.Drawing.Point(658, 98);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(114, 13);
+            this.label3.Size = new System.Drawing.Size(130, 15);
             this.label3.TabIndex = 32;
             this.label3.Text = "Potência Selecionada:";
             // 
             // lblAquecimento
             // 
             this.lblAquecimento.AutoSize = true;
-            this.lblAquecimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblAquecimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblAquecimento.Location = new System.Drawing.Point(12, 41);
             this.lblAquecimento.Name = "lblAquecimento";
-            this.lblAquecimento.Size = new System.Drawing.Size(0, 15);
+            this.lblAquecimento.Size = new System.Drawing.Size(0, 17);
             this.lblAquecimento.TabIndex = 31;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 13);
+            this.label1.Size = new System.Drawing.Size(159, 15);
             this.label1.TabIndex = 30;
             this.label1.Text = "Processo de Aquecimento...";
             // 
@@ -285,7 +290,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblAquecimento);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Microondas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Microondas - Benner";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarPower)).EndInit();

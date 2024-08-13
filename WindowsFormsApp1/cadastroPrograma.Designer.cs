@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cadastroPrograma));
             this.label1 = new System.Windows.Forms.Label();
             this.lblNomePrograma = new System.Windows.Forms.Label();
             this.lblPotencia = new System.Windows.Forms.Label();
@@ -58,56 +59,62 @@
             // lblNomePrograma
             // 
             this.lblNomePrograma.AutoSize = true;
+            this.lblNomePrograma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblNomePrograma.Location = new System.Drawing.Point(20, 45);
             this.lblNomePrograma.Name = "lblNomePrograma";
-            this.lblNomePrograma.Size = new System.Drawing.Size(104, 13);
+            this.lblNomePrograma.Size = new System.Drawing.Size(126, 15);
             this.lblNomePrograma.TabIndex = 2;
-            this.lblNomePrograma.Text = "Nome do programa *";
+            this.lblNomePrograma.Text = "Nome do programa *:";
             // 
             // lblPotencia
             // 
             this.lblPotencia.AutoSize = true;
+            this.lblPotencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblPotencia.Location = new System.Drawing.Point(317, 45);
             this.lblPotencia.Name = "lblPotencia";
-            this.lblPotencia.Size = new System.Drawing.Size(56, 13);
+            this.lblPotencia.Size = new System.Drawing.Size(66, 15);
             this.lblPotencia.TabIndex = 3;
-            this.lblPotencia.Text = "Potência *";
+            this.lblPotencia.Text = "Potência *:";
             // 
             // lblAlimento
             // 
             this.lblAlimento.AutoSize = true;
+            this.lblAlimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblAlimento.Location = new System.Drawing.Point(20, 96);
             this.lblAlimento.Name = "lblAlimento";
-            this.lblAlimento.Size = new System.Drawing.Size(54, 13);
+            this.lblAlimento.Size = new System.Drawing.Size(66, 15);
             this.lblAlimento.TabIndex = 4;
-            this.lblAlimento.Text = "Alimento *";
+            this.lblAlimento.Text = "Alimento *:";
             // 
             // lblTempo
             // 
             this.lblTempo.AutoSize = true;
+            this.lblTempo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblTempo.Location = new System.Drawing.Point(317, 96);
             this.lblTempo.Name = "lblTempo";
-            this.lblTempo.Size = new System.Drawing.Size(47, 13);
+            this.lblTempo.Size = new System.Drawing.Size(57, 15);
             this.lblTempo.TabIndex = 5;
-            this.lblTempo.Text = "Tempo *";
+            this.lblTempo.Text = "Tempo *:";
             // 
             // lblCharAquecimento
             // 
             this.lblCharAquecimento.AutoSize = true;
+            this.lblCharAquecimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblCharAquecimento.Location = new System.Drawing.Point(18, 151);
             this.lblCharAquecimento.Name = "lblCharAquecimento";
-            this.lblCharAquecimento.Size = new System.Drawing.Size(140, 13);
+            this.lblCharAquecimento.Size = new System.Drawing.Size(163, 15);
             this.lblCharAquecimento.TabIndex = 6;
-            this.lblCharAquecimento.Text = "Caractere de Aquecimento *";
+            this.lblCharAquecimento.Text = "Caractere de Aquecimento *:";
             // 
             // lblInstrucao
             // 
             this.lblInstrucao.AutoSize = true;
+            this.lblInstrucao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.lblInstrucao.Location = new System.Drawing.Point(18, 199);
             this.lblInstrucao.Name = "lblInstrucao";
-            this.lblInstrucao.Size = new System.Drawing.Size(86, 13);
+            this.lblInstrucao.Size = new System.Drawing.Size(100, 15);
             this.lblInstrucao.TabIndex = 7;
-            this.lblInstrucao.Text = "Instrução de uso";
+            this.lblInstrucao.Text = "Instrução de uso:";
             // 
             // txtNomePrograma
             // 
@@ -153,6 +160,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAdd.Location = new System.Drawing.Point(57, 257);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(101, 32);
@@ -163,6 +171,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnCancelar.Location = new System.Drawing.Point(272, 257);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 32);
@@ -191,8 +200,11 @@
             this.Controls.Add(this.lblPotencia);
             this.Controls.Add(this.lblNomePrograma);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "cadastroPrograma";
-            this.Text = "Form1";
+            this.Text = "Cadastro de Programas";
             this.ResumeLayout(false);
             this.PerformLayout();
 
