@@ -19,6 +19,11 @@ namespace WindowsFormsApp1
 
         // Define um caractere padrão para comparação.
         private string charPadrao = ".";
+        private string charPadrao1 = "@";
+        private string charPadrao2 = "#";
+        private string charPadrao3 = "$"; // Como O banco está váz~io não irá travar esses caracteres... Reparei após teste.
+        private string charPadrao4 = "%";
+        private string charPadrao5 = "&";
 
         // String de conexão com o banco de dados.
         private string connectionString = "Server=localhost\\SQLEXPRESS;Database=ListaPrograma;Trusted_Connection=True;TrustServerCertificate=True;";
@@ -101,7 +106,13 @@ namespace WindowsFormsApp1
             }
 
             // Verifica se o char_Aquecimento já existe ou é o caractere padrão.
-            if ((CharAquecimentoExiste(txtCharAquecimento.Text)) || txtCharAquecimento.Text == charPadrao)
+            if ((CharAquecimentoExiste(txtCharAquecimento.Text)) || 
+                txtCharAquecimento.Text == charPadrao || 
+                txtCharAquecimento.Text == charPadrao1 || 
+                txtCharAquecimento.Text == charPadrao2 || 
+                txtCharAquecimento.Text == charPadrao3 || 
+                txtCharAquecimento.Text == charPadrao4 || 
+                txtCharAquecimento.Text == charPadrao5)
             {
                 MessageBox.Show("O caractere de aquecimento fornecido já existe em outro programa.");
                 return; // Interrompe o método e não prossegue com a inserção.
