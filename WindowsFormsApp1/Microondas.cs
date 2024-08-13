@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
             trackBarPower.Scroll += trackBarPower_Scroll;
 
             // Configura o tamanho do Label do Aquecimento.
-            lblAquecimento.MaximumSize = new Size(700, 0);
+            lblAquecimento.MaximumSize = new Size(600, 0);
             lblAquecimento.AutoSize = true;
 
             // Inicializa os programas de aquecimento.
